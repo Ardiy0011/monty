@@ -10,7 +10,7 @@
  *
  **/
 void _process(char *file_content, int line_number,
-                stack_t **head, int *exit_code)
+	stack_t **head, int *exit_code)
 {
 	char **tokens = NULL;
 	char *opcode = NULL;

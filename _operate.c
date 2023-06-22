@@ -12,7 +12,7 @@
  *
  **/
 void _operate(unsigned int line_number, char *opcode,
-                int operand, stack_t **head, int *exit_code)
+	int operand, stack_t **head, int *exit_code)
 {
 	int index = 0;
 	char *itoa = NULL;

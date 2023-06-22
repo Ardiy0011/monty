@@ -1,6 +1,6 @@
 #include "monty.h"
 
-void do_nothing();
+void do_nothing(void);
 
 operation_t _global_operation;
 
@@ -35,6 +35,9 @@ int main(int argc, char *argv[])
 	return (exit_code);
 }
 
+/**
+ * do_nothing - Do absolutely nothing!
+ **/
 void do_nothing(void)
 {
 

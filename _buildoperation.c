@@ -12,7 +12,7 @@
  *
  **/
 operation_t _buildoperation(instruction_t instruction, const int operand
-                , int *exit_code)
+	, int *exit_code)
 {
 	operation_t operation;
 

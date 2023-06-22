@@ -12,7 +12,7 @@
  **/
 int _isnumber(char *str)
 {
-	char *digits = "0123456789";
+	char *digits = "-0123456789";
 	int d_index = 0, s_index = 0;
 	int result = IS_ALPHA;
 

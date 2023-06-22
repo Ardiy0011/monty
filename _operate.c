@@ -20,6 +20,7 @@ void _operate(unsigned int line_number, char *opcode,
 		{"push", _opush}
 		, {"pall", _opall}
 		, {"pint", _opint}
+		, {"pop", _opop}
 		, {NULL, NULL}
 	};
 	instruction_t inst;

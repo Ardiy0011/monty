@@ -35,7 +35,7 @@ void _odiv(stack_t **head, unsigned int line_number)
 	}
 
 	itoa = _itoa(line_number, operation.exit_code);
-	if ((*head)->n == 0)
+	if ((*head)->next->n == 0)
 	{
 		_error(operation.exit_code, 2, "L", itoa,
 		       ": division by zero");

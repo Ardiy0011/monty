@@ -39,6 +39,6 @@ void _odiv(stack_t **head, unsigned int line_number)
     operation = _global_operation;
     itoa = _itoa(line_number, operation.exit_code);
     _error(operation.exit_code, 2, "L", itoa, ": can't div, stack too short");
-    free(itoa);
+
     *_global_operation.exit_code = EXIT_FAILURE;
 }

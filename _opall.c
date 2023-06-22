@@ -11,6 +11,10 @@ void _opall(stack_t **head, unsigned int __attribute__((unused))line_number)
 {
 	stack_t *current;
 
+	if (*head == NULL)
+	{
+		return;
+	}
 	current = *head;
 	while (current != NULL)
 	{

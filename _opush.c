@@ -36,5 +36,9 @@ void _opush(stack_t **head, unsigned int __attribute__((unused))line_number)
 	node->n = operation.operand;
 	node->prev = NULL;
 	node->next = *head;
+	if ((*head) != NULL)
+	{
+		(*head)->prev = node;
+	}
 	(*head) = node;
 }

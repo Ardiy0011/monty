@@ -19,6 +19,7 @@ void _operate(unsigned int line_number, char *opcode,
 	instruction_t insts[] = {
 		{"push", _opush}
 		, {"pall", _opall}
+		, {"pint", _opint}
 		, {NULL, NULL}
 	};
 	instruction_t inst;

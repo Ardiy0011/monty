@@ -9,7 +9,7 @@
  **/
 void _opall(stack_t **head, unsigned int __attribute__((unused))line_number)
 {
-	stack_t *current;
+	stack_t *current = NULL;
 
 	if (*head == NULL)
 	{

@@ -1,8 +1,7 @@
 #include "monty.h"
 
 /**
- * _odiv - this subtracks the data within the top stack from
- *          the value second to top.
+ * _odiv - this divides the 2nd to top value to top
  *
  * @head: The head node in the list.
  * @line_number: particular line read at given time by getline
@@ -36,7 +35,7 @@ void _odiv(stack_t **head, unsigned int line_number)
 	}
 
 	itoa = _itoa(line_number, operation.exit_code);
-	if ((*head)->n == "0")
+	if ((*head)->n == 0)
 	{
 		_error(operation.exit_code, 2, "L", itoa,
 		       ": division by zero");

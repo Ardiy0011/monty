@@ -17,7 +17,10 @@ int _stackoperation(operation_t operation, unsigned int line_number
 	_global_operation.instruction = operation.instruction;
 	_global_operation.operand = operation.operand;
 	_global_operation.exit_code = operation.exit_code;
-	_global_operation.instruction.f(head, line_number);
+	if (_global_operation.instruction.f != NULL)
+	{
+		_global_operation.instruction.f(head, line_number);
+	}
 
 	return (*_global_operation.exit_code);
 }

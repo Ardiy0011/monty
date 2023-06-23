@@ -28,6 +28,7 @@ void _operate(unsigned int line_number, char *opcode,
 		, {"mul", _omul}
 		, {"mod", _omod}
 		, {"pchar", _opchar}
+		, {"pstr", _opstr}
 		, {"nop", NULL}
 		, {NULL, NULL}
 	};

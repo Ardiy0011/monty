@@ -82,6 +82,7 @@ void _odiv(stack_t **head, unsigned int line_number);
 void _omul(stack_t **head, unsigned int line_number);
 void _omod(stack_t **head, unsigned int line_number);
 void _opchar(stack_t **head, unsigned int line_number);
+void _opstr(stack_t **head, unsigned int line_number);
 char *_itoa(int number, int *exit_code);
 char *_strrev(char *str, int *exit_code);
 int _strlen(char *str);

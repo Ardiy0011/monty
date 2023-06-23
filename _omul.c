@@ -3,6 +3,7 @@
 /**
  * _omul - this multiplies the data within the top stack and
  *          the data in second to top.
+ * 
  * @head: The head node in the list.
  * @line_number: particular line read at given time by getline
  */
@@ -29,7 +30,7 @@ void _omul(stack_t **head, unsigned int line_number)
 	if (itoa != NULL)
 	{
 		_error(operation.exit_code, 2, "L", itoa,
-		": can't mul, stack too short");
+		": can't mul, stack too shor");
 		free(itoa);
 		*_global_operation.exit_code = EXIT_FAILURE;
 	}

@@ -21,7 +21,8 @@ void _operate(unsigned int line_number, char *opcode,
 		, {"pop", _opop}, {"swap", _oswap}, {"add", _oadd}
 		, {"sub", _osub}, {"div", _odiv}, {"mul", _omul}
 		, {"mod", _omod}, {"pchar", _opchar}, {"pstr", _opstr}
-		, {"rotl", _orotl}, {"nop", NULL}, {NULL, NULL}
+		, {"rotl", _orotl}, {"rotr", _orotr}, {"nop", NULL}
+		, {NULL, NULL}
 	};
 	instruction_t inst;
 	operation_t operation;

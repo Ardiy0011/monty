@@ -25,6 +25,7 @@ void _operate(unsigned int line_number, char *opcode,
 		, {"add", _oadd}
 		, {"sub", _osub}
 		, {"div", _odiv}
+		, {"mul", _omul}
 		, {"nop", NULL}
 		, {NULL, NULL}
 	};

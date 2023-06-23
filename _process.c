@@ -16,6 +16,10 @@ void _process(char *file_content, int line_number,
 	char *opcode = NULL;
 	int token_count = 0, operand = NO_OPERAND;
 
+	if (_iscomment(file_content) == IS_COMMENT_YES)
+	{
+		return;
+	}
 	tokens = _tokenize(file_content, exit_code);
 	if (tokens == NULL)
 	{

@@ -13,6 +13,8 @@
 #define NO_OPERAND -9876
 #define IS_NUMBER 0
 #define IS_ALPHA 1
+#define IS_COMMENT_YES 1
+#define IS_COMMENT_NO 0
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -79,7 +81,6 @@ void _osub(stack_t **head, unsigned int line_number);
 void _odiv(stack_t **head, unsigned int line_number);
 void _omul(stack_t **head, unsigned int line_number);
 void _omod(stack_t **head, unsigned int line_number);
-void _comment(stack_t **head, unsigned int line_number);
 char *_itoa(int number, int *exit_code);
 char *_strrev(char *str, int *exit_code);
 int _strlen(char *str);
@@ -90,6 +91,7 @@ int _stackoperation(operation_t instruction,
 unsigned int line_number, stack_t **head);
 void free_stack(stack_t **head);
 int _isnumber(char *str);
+int _iscomment(char *str);
 
 extern operation_t _global_operation;
 

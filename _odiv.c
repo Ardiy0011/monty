@@ -13,11 +13,11 @@ void _odiv(stack_t **head, unsigned int line_number)
 	operation_t operation;
 	int result = 0;
 
-	if (((*head) != NULL && (*head)->next != NULL) ||
+	if (((*head) == NULL || (*head)->next == NULL) ||
 	((*head) != NULL && (*head)->n == 0))
 	{
 		msg = "division by zero";
-		if ((*head) != NULL && (*head)->next != NULL)
+		if ((*head) == NULL || (*head)->next == NULL)
 		{
 			msg = "can't div, stack too short";
 		}
